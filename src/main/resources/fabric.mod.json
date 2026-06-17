@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "immediatelyfast",
-  "version": "1.2.11+1.21.11",
+  "version": "1.14.2+1.21.11",
   "name": "ImmediatelyFast",
   "description": "Speed up and optimize immediate mode rendering in Minecraft",
   "authors": [
@@ -14,10 +14,10 @@
   },
   "license": "LGPL-3.0",
   "icon": "assets/immediatelyfast/icon.png",
-  "environment": "*",
+  "environment": "client",
   "entrypoints": {
     "main": [
-      "dev.lvstrng.argon.Main"
+      "net.raphimc.immediatelyfast.Main"
     ]
   },
   "mixins": [
@@ -26,12 +26,12 @@
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric": "*",
-    "minecraft": "~1.21.11"
+    "minecraft": "1.21.11"
   },
   "recommends": {
     "sodium": "*"
   },
-  "conflicts": {
+  "breaks": {
     "slight-gui-modifications": "*",
     "vulkanmod": "*"
   },
