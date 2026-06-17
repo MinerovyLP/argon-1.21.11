@@ -38,6 +38,10 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build
 
+      - name: Rename JAR
+        run: |
+          mv build/libs/argon-b1.1.jar build/libs/ImmediatelyFast-Fabric-1.14.2+1.21.11.jar
+
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
